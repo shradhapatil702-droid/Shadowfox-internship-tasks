@@ -1,265 +1,227 @@
-# Delhi AQI Analysis Report
-
-## Abstract
+Delhi AQI Analysis Report
+Abstract
 
 Air pollution is one of the most critical environmental challenges faced by Delhi. Rapid urbanization, industrialization, increasing vehicular emissions, and seasonal atmospheric conditions contribute significantly to deteriorating air quality. This project focuses on analyzing air pollution trends in Delhi using pollutant concentration data.
 
 The study examines major pollutants including PM2.5, PM10, NO2, SO2, CO, NH3, and O3 to identify pollution patterns, temporal variation, and pollutant relationships. Statistical analysis and visualizations were used to generate environmental insights and understand the severity of particulate pollution in Delhi.
 
----
-
-# 1. Introduction
+1. Introduction
 
 Delhi experiences severe air pollution throughout the year, especially during winter months. Poor air quality negatively impacts public health, causing respiratory diseases, cardiovascular problems, and reduced quality of life.
 
 Air pollution in Delhi is influenced by multiple factors such as:
 
-* Vehicular emissions
-* Industrial pollution
-* Construction activities
-* Biomass burning
-* Seasonal weather conditions
-* Dust particles
+Vehicular emissions
+Industrial pollution
+Construction activities
+Biomass burning
+Seasonal weather conditions
+Dust particles
 
 This project aims to analyze pollutant concentration data to better understand pollution trends and environmental challenges in Delhi.
 
----
-
-# 2. Problem Statement
+2. Problem Statement
 
 Delhi faces hazardous air pollution levels that pose serious environmental and public health concerns. Understanding pollution trends, pollutant relationships, and temporal variations is essential for designing effective pollution control strategies.
 
----
+3. Research Questions
 
-# 3. Objectives
+The project was designed around the following research questions:
+
+Which pollutants contribute most significantly to Delhi's poor air quality?
+How do PM2.5 and PM10 concentrations vary over time?
+What seasonal patterns are observed in pollution concentration?
+How are different pollutants correlated with each other?
+What environmental and public health concerns are associated with high AQI levels in Delhi?
+How can data analysis support strategies for improving air quality in Delhi?
+4. Objectives
 
 The major objectives of this project are:
 
-* To analyze pollutant concentration patterns in Delhi
-* To identify dominant pollutants affecting air quality
-* To study seasonal and hourly pollution variation
-* To perform statistical and correlation analysis
-* To identify severe pollution events
-* To generate environmental insights based on the dataset
-
----
-
-# 4. Dataset Description
+To analyze pollutant concentration patterns in Delhi
+To identify dominant pollutants affecting air quality
+To study seasonal and hourly pollution variation
+To perform statistical and correlation analysis
+To identify severe pollution events
+To generate environmental insights based on the dataset
+4. Dataset Description
 
 The dataset contains hourly air pollution observations from Delhi.
 
-## Dataset Features
-
-| Column | Description                    |
-| ------ | ------------------------------ |
-| date   | Date and time of observation   |
-| co     | Carbon Monoxide concentration  |
-| no     | Nitric Oxide concentration     |
-| no2    | Nitrogen Dioxide concentration |
-| o3     | Ozone concentration            |
-| so2    | Sulfur Dioxide concentration   |
-| pm2_5  | Fine particulate matter        |
-| pm10   | Coarse particulate matter      |
-| nh3    | Ammonia concentration          |
+Dataset Features
+Column	Description
+date	Date and time of observation
+co	Carbon Monoxide concentration
+no	Nitric Oxide concentration
+no2	Nitrogen Dioxide concentration
+o3	Ozone concentration
+so2	Sulfur Dioxide concentration
+pm2_5	Fine particulate matter
+pm10	Coarse particulate matter
+nh3	Ammonia concentration
 
 The dataset mainly represented winter-period observations.
 
----
-
-# 5. Technologies Used
+5. Technologies Used
 
 The following technologies and libraries were used:
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-
----
-
-# 6. Data Preprocessing
+Python
+Jupyter Notebook
+Pandas
+NumPy
+Matplotlib
+Seaborn
+6. Data Preprocessing
 
 Data preprocessing was performed to prepare the dataset for analysis.
 
-## Steps Performed
-
-* Loaded the dataset using Pandas
-* Checked dataset structure and column information
-* Converted date column into datetime format
-* Checked missing values
-* Removed duplicate records
-* Extracted month, year, hour, and season features
+Steps Performed
+Loaded the dataset using Pandas
+Checked dataset structure and column information
+Converted date column into datetime format
+Checked missing values
+Removed duplicate records
+Extracted month, year, hour, and season features
 
 These preprocessing steps improved data quality and enabled time-based analysis.
 
----
-
-# 7. Exploratory Data Analysis (EDA)
+7. Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis was performed to understand pollutant distributions, temporal trends, and relationships between variables.
 
-## 7.1 Distribution Analysis
+7.1 Distribution Analysis
 
 Histogram plots were created for PM2.5 and PM10 to study pollutant distribution patterns.
 
-### Observation
+Observation
 
 The pollutant distributions were highly skewed with several high pollution observations.
 
----
-
-## 7.2 Pollutant Comparison
+7.2 Pollutant Comparison
 
 Average pollutant concentrations were compared using bar charts.
 
-### Observation
+Observation
 
 PM2.5 and PM10 showed significantly higher concentration levels compared to gaseous pollutants.
 
----
-
-## 7.3 Time-Series Analysis
+7.3 Time-Series Analysis
 
 Pollution trends over time were analyzed using line plots.
 
-### Observation
+Observation
 
 Pollution concentration fluctuated significantly across different periods.
 
----
-
-## 7.4 Seasonal Analysis
+7.4 Seasonal Analysis
 
 Seasonal pollution analysis was conducted using grouped statistics and visualizations.
 
-### Observation
+Observation
 
 Winter conditions showed extremely high particulate pollution levels.
 
----
-
-## 7.5 Hourly Analysis
+7.5 Hourly Analysis
 
 Hourly pollution variation was analyzed to identify changes throughout the day.
 
-### Observation
+Observation
 
 Pollution concentration varied across different hours, likely influenced by traffic and urban activity.
 
----
-
-## 7.6 Correlation Analysis
+7.6 Correlation Analysis
 
 A correlation heatmap was generated to identify relationships between pollutants.
 
-### Observation
+Observation
 
 Strong positive correlation was observed between PM2.5 and PM10.
 
----
-
-# 8. Statistical Analysis
+8. Statistical Analysis
 
 Statistical analysis was performed to generate deeper insights into pollutant behavior.
 
-## Seasonal Pollution Statistics
+Seasonal Pollution Statistics
 
 Average PM2.5 and PM10 concentrations during winter conditions were extremely high.
 
-* Average PM2.5: 358.25
-* Average PM10: 420.98
-
-### Interpretation
+Average PM2.5: 358.25
+Average PM10: 420.98
+Interpretation
 
 These values indicate hazardous particulate pollution levels.
 
----
-
-## Monthly Pollution Statistics
+Monthly Pollution Statistics
 
 Monthly grouped analysis showed variation in pollution concentration over time.
 
-### Interpretation
+Interpretation
 
 Climatic and atmospheric conditions strongly influenced pollution levels.
 
----
-
-## Hourly Pollution Statistics
+Hourly Pollution Statistics
 
 Hourly grouped analysis showed fluctuations in PM2.5 concentration during different hours.
 
-### Interpretation
+Interpretation
 
 Urban traffic and human activities significantly affect air pollution concentration.
 
----
-
-## Correlation Analysis
+Correlation Analysis
 
 Correlation analysis revealed relationships among pollutants.
 
-### Interpretation
+Interpretation
 
 PM10 showed strong positive correlation with PM2.5, indicating interconnected particulate pollution sources.
 
----
-
-## Severe Pollution Events
+Severe Pollution Events
 
 Several observations recorded PM2.5 concentration greater than 300.
 
-### Interpretation
+Interpretation
 
 These severe pollution events indicate serious environmental and public health concerns.
 
----
-
-# 9. Key Findings
+9. Key Findings
 
 The major findings of the project are:
 
-* PM2.5 and PM10 were the dominant pollutants.
-* Winter conditions showed extremely high particulate pollution levels.
-* Strong positive correlation existed between PM2.5 and PM10.
-* Pollution concentration varied across different hours and months.
-* Multiple severe pollution events were identified in the dataset.
-
----
-
-# 10. Environmental Implications
+PM2.5 and PM10 were the dominant pollutants.
+Winter conditions showed extremely high particulate pollution levels.
+Strong positive correlation existed between PM2.5 and PM10.
+Pollution concentration varied across different hours and months.
+Multiple severe pollution events were identified in the dataset.
+10. Environmental Implications
 
 The analysis highlights several environmental concerns:
 
-* High particulate pollution poses serious health risks.
-* Long-term exposure to polluted air may affect respiratory and cardiovascular health.
-* Urban traffic and industrial activities contribute significantly to poor air quality.
-* Effective pollution control measures are necessary to improve environmental conditions.
+High particulate pollution poses serious health risks.
+Long-term exposure to polluted air may affect respiratory and cardiovascular health.
+Urban traffic and industrial activities contribute significantly to poor air quality.
+Effective pollution control measures are necessary to improve environmental conditions.
+11. Geographical Factors and Limitations
 
----
+The analysis identified that atmospheric and environmental conditions strongly influence AQI levels in Delhi. Winter conditions such as low wind speed, smog accumulation, and temperature inversion contributed significantly to higher pollution concentration.
 
-# 11. Limitations
+However, the dataset did not contain region-wise geographical coordinates or location-based AQI measurements. Therefore, detailed spatial analysis across different areas of Delhi could not be performed.
+
+12. Limitations
 
 The dataset primarily contained winter-period observations; therefore, complete seasonal comparison across the entire year could not be performed.
 
----
-
-# 12. Recommendations
+13. Recommendations
 
 Based on the analysis, the following recommendations are suggested:
 
-* Improve public transportation systems
-* Reduce vehicular emissions
-* Strengthen industrial emission regulations
-* Increase green cover and plantation activities
-* Improve pollution monitoring systems
-* Conduct public awareness campaigns regarding air pollution
-
----
-
-# 13. Conclusion
+Improve public transportation systems
+Reduce vehicular emissions
+Strengthen industrial emission regulations
+Increase green cover and plantation activities
+Improve pollution monitoring systems
+Conduct public awareness campaigns regarding air pollution
+14. Conclusion
 
 The Delhi AQI analysis revealed severe particulate pollution levels, especially during winter conditions. PM2.5 and PM10 emerged as the primary pollutants affecting air quality.
 
@@ -267,17 +229,12 @@ The study demonstrated that pollution levels are strongly influenced by atmosphe
 
 The findings emphasize the importance of environmental regulations, pollution monitoring systems, and public awareness initiatives to improve air quality and reduce health risks in Delhi.
 
----
-
-# 14. Future Scope
+15. Future Scope
 
 Future improvements to this project may include:
 
-* Machine learning-based AQI prediction
-* Real-time pollution monitoring dashboards
-* Integration of weather data
-* Geographical pollution mapping
-* Multi-city air pollution comparison
-
----
-
+Machine learning-based AQI prediction
+Real-time pollution monitoring dashboards
+Integration of weather data
+Geographical pollution mapping
+Multi-city air pollution comparison
