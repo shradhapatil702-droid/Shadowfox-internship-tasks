@@ -122,19 +122,26 @@ This project analyzes AQI patterns and provides insights that can help improve p
 # Project Structure
 
 ```bash
-Project/
+Shadowfox-internship-tasks/
 │
-├── Visualization_Documentation/
-│   ├── matplotlib_examples.ipynb
-│   ├── seaborn_examples.ipynb
-│   └── documentation.pdf
+├── task2/
+│   ├── data/
+│   │   └── delhiaqi.csv
+│   │
+│   ├── images/
+│   │   ├── heatmap.png
+│   │   ├── hourly_trend.png
+│   │   ├── monthly_trend.png
+│   │   ├── pm10_distribution.png
+│   │   ├── pm25_distribution.png
+│   │   ├── pollutant_comparison.png
+│   │   └── seasonal_analysis.png
+│   │
+│   ├── Delhi_AQI_Report.docx
+│   └── notebook.ipynb
 │
-├── Delhi_AQI_Analysis/
-│   ├── delhi_aqi_analysis.ipynb
-│   ├── dataset.csv
-│   ├── visuals/
-│   └── report.pdf
 │
+├── Data-visualization(task-1).pdf
 └── README.md
 ```
 
